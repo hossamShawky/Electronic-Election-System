@@ -1,0 +1,616 @@
+body{
+  background: #e5e5e5;
+}
+header{
+  width: 100%;
+  height: 10vh;
+  background: #2d4059;
+  padding: 15px 0 0 40px;
+  font-family: 'Pacifico', cursive;
+}
+header a{
+  color: #e5e5e5;
+  font-size: 25px;
+  font-weight: 700;
+}
+header a:hover{
+  text-decoration: none;
+  color: #e5e5e5;
+}
+/* login page */
+.login-area{
+    width: 30%;
+    margin: 0 auto;
+    background: url('../images/rosario-janza-69qT-N3L5sc-unsplash.jpg')center center no-repeat;
+    background-size: cover;
+    height: 83vh;
+    box-shadow: 0 4px 8px 0 rgba(112, 112, 112, 0.2), 0 6px 20px 0 rgba(107, 106, 106, 0.5);
+}
+.overlay{
+    position: absolute;
+    width: 30%;
+    height: 83vh;
+    background-color: #5d728d;
+    opacity: .8;
+}
+.login-content{
+    width:100% ;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 30px;
+    padding-top: 30px;
+    font-size: 20px;
+    color: #e5e5e5;
+    font-family: 'Heebo', sans-serif;
+}
+.login-title{
+  text-align: center; 
+  font-size: 30px !important; 
+}
+.login-content label{
+    padding-bottom: 5px;
+    padding-top: 10px;
+    font-weight: 700;
+    z-index: 9999;
+}
+.login-content input{
+  border:solid 1px #b3a59e;
+  border-radius: 20px;
+  height: 40px;
+  background: #e5e5e5;
+  outline: 0;
+  padding: 5px 20px 5px 20px;
+  font-size: 15px;
+  z-index: 9999;
+  opacity: .9;
+}
+.fingerprint{
+  width: 35%;
+  height: 40%;
+  background: url('../images/fingerprint.png') center center no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  z-index: 9999;
+}
+.login-content button{
+    border: none;
+    border-radius: 20px;
+    background-color: #ea5455;
+    height: 50px;
+    margin-top: 20px;
+    color: #decdc3;
+    font-weight: 700;
+    outline: 0;
+    margin-bottom: 40px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  .login-content button:hover{
+    background-color: #f57575;
+  }
+  /* Voting page */
+  h1{
+    font-family: 'Heebo', sans-serif;
+    color: #2d4059;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: 900;
+    font-size: 30px;
+
+  }
+  .voting-page .container-fluid{
+    width: 85%;
+    direction: rtl;
+  }
+  .Candidates{
+    padding-bottom: 100px;
+  }
+  /* candidate card */
+  .Candidate{
+    padding: 0px 20px 0px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    perspective: 1000px;
+    margin-top: 20px;
+    }
+    .card-bg{
+      background-color: #2d4059;
+      border-radius: 5px;
+      padding-bottom: 20px;
+      border: none;
+    }
+    .card{
+      background: url('../images/member-1.jpg')center center no-repeat;
+      background-size: cover;
+        color: whitesmoke;
+        font-size: 35px;
+        height: 200px;
+        border: none;
+        border-radius: 0px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        position: relative;
+        transition: transform 0.5s;
+        transform-style: preserve-3d;
+        }
+        .card:active{
+            transform: scale(.89);
+        }
+        .card.flipCard{
+          transform: rotateY(180deg);
+          
+      }
+    .card-front{
+      border: none;
+    }
+    .card-open{
+      width: 100%;
+      height: 100%;
+      background-color:  #2d4059;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      transform: rotateY(180deg);
+      border: none;
+    }
+    .Candidate h4{
+      color: #e5e5e5;
+      font-family: 'Heebo', sans-serif;
+      text-align: center;
+      padding-top: 20px;
+      font-size: 18px;
+    }
+    .Candidate h5{
+      color: #e5e5e5;
+      font-family: 'Heebo', sans-serif;
+      text-align: center;
+      font-size: 15px;
+    }
+  /* tic mark */
+  #tick-mark {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#tick-mark::before {
+    position: absolute;
+    left: 70px;
+    top: 30%;
+    height: 51%;
+    width: 10px;
+    background-color: #f57575;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+#tick-mark::after {
+    position: absolute;
+    left: 70px;
+    bottom: 38px;
+    height: 10px;
+    width: 85%;
+    background-color: #f57575;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+.vision-btn{
+  border: none;
+  border-radius: 20px;
+  background-color: #decdc3;
+  height: 33px;
+  width: 65%;
+  margin-top: 10px;
+  margin-left: 17.5%;
+  color:  #ea5455;
+  font-weight: 700;
+  outline: 0 !important;
+  cursor: pointer;
+}
+.vote-btn{
+  border: none;
+  border-radius: 20px;
+  background-color: #ea5455;
+  height: 33px;
+  width: 65%;
+  margin-top: 10px;
+  margin-left: 17.5%;
+  color: #decdc3;
+  font-weight: 700;
+  outline: 0 !important;
+  cursor: pointer;
+}
+/* voter opinion */
+.Voter-opinion{
+  padding-top: 30px;
+  padding-left: 80px;
+}
+.v-opinion-btn{
+  border: none;
+  border-radius: 20px;
+  background-color: #ea5455;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  color: #decdc3;
+  font-weight: 700;
+  outline: 0 !important;
+  cursor: pointer;
+}
+.v-opinion-btn:hover{
+  background-color: #f57575;
+}
+.vision-message{
+  width: 50%;
+  background: #decdc3;
+  position: absolute;
+  left: 25%;
+  top: 150px;
+  border-radius: 5px;
+  z-index: 9999;
+  display: none;
+  color: #2d4059;
+}
+.message-header{
+  width: 100%;
+  height: 40px;
+  border-bottom: solid 1px #8e9aaa;
+}
+.vision-cand{
+  display: inline-block;
+  padding: 7px 0 0 25px;
+}
+.close-vision{
+  float: right;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ea5455;
+  padding: 4px 25px 0 0;
+  cursor: pointer;
+}
+.vision-message .container-fluid{
+  width: 100%;
+  opacity: 1;
+  padding-top: 10px;
+}
+/* dashboard */
+/* committe information */
+.commitee-info .container, .commitee-v-info .container, .commitee-e-info .container{
+  padding: 30px;
+}
+.commitee-info .container .row, .commitee-v-info .container .row, .commitee-e-info .container .row{
+  background: #2d4059;
+  box-shadow: 0 4px 8px 0 rgba(75, 69, 69, 0.2), 0 6px 20px 0 rgba(71, 68, 68, 0.5);
+}
+.commitee-info .column-left, .commitee-v-info .column-left, .commitee-e-info .column-left{
+  padding: 10px;
+  border-right: solid 1px #decdc3;
+  border-top: solid 1px #decdc3;
+  color:  #eee6e1;
+}
+.commitee-info .column-right, .commitee-v-info .column-right, .commitee-e-info .column-right{
+  padding: 10px;
+  border-top: solid 1px #decdc3;
+  color:  #eee6e1;
+}
+  @media screen and (max-width: 1024px) {
+    header{
+      padding: 50px 0 0 40px;
+    }
+    .login-area{
+      width: 60%;
+      margin-top: 150px;
+      height: 70vh;
+  }
+  .overlay{
+    position: absolute;
+    width: 60%;
+    height: 70vh;
+    background-color: #5d728d;
+    opacity: .8;
+}
+.login-content{
+    width:100% ;
+    height: 100%;
+    padding: 60px;
+    padding-top: 50px;
+}
+.login-title{
+  text-align: center; 
+  font-size: 50px !important; 
+}
+.login-content label{
+  padding-bottom: 5px;
+  padding-top: 40px;
+  font-weight: 700;
+  z-index: 9999;
+  font-size: 25px;
+}
+.fingerprint{
+  width: 41%;
+  height: 35%;
+  background: url('../images/fingerprint.png') center center no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  z-index: 9999;
+  margin-top: 10px;
+}
+.login-content button{
+  margin-top: 60px;
+}
+.Candidate{
+  padding: 0px 10px 0px 10px;
+  }
+  /* tic mark */
+#tick-mark::before {
+    position: absolute;
+    left: 60px;
+    top: 40%;
+    height: 41%;
+    width: 10px;
+    background-color: #f57575;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+#tick-mark::after {
+    position: absolute;
+    left: 60px;
+    bottom: 38px;
+    height: 10px;
+    width: 80%;
+    background-color: #f57575;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+.vision-message{
+  width: 80%;
+  background: #decdc3;
+  position: absolute;
+  left: 10%;
+  top: 150px;
+  border-radius: 5px;
+  z-index: 9999;
+  display: none;
+}
+  }
+  @media screen and (max-width: 768px) {
+    header{
+      padding: 30px 0 0 40px;
+    }
+    .login-area{
+      margin-top: 40px;
+      height: 80vh;
+  }
+  .overlay{
+    height: 80vh;
+  }
+  .login-content{
+    width:100% ;
+    height: 100%;
+    padding: 40px;
+    padding-top: 40px;
+}
+.login-content label{
+  padding-bottom: 5px;
+  padding-top: 30px;
+  font-weight: 700;
+  z-index: 9999;
+  font-size: 25px;
+}
+.fingerprint{
+  width: 41%;
+  height: 30%;
+  background: url('../images/fingerprint.png') center center no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  z-index: 9999;
+  margin-top: 10px;
+}
+.login-content button{
+  margin-top: 40px;
+}
+.Candidates{
+  padding-bottom: 0px;
+}
+.Candidate{
+  padding: 0px 0px 0px 30px;
+  }
+  /* tic mark */
+#tick-mark::before {
+    position: absolute;
+    left: 105px;
+    top: 36%;
+    height: 56%;
+    width: 10px;
+    background-color: #f57575;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+#tick-mark::after {
+    position: absolute;
+    left: 105px;
+    bottom: 15px;
+    height: 10px;
+    width: 80%;
+    background-color: #f57575;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+.Voter-opinion{
+  padding: 30px 0 100px 0;
+}
+  }
+  @media screen and (max-width: 414px) {
+    header{
+      padding: 15px 0 0 40px;
+    }
+    .login-area{
+      width: 100%;
+      margin-top: 0px;
+      height: 100vh;
+  }
+  .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #5d728d;
+    opacity: .8;
+}
+.login-content{
+  width:100% ;
+  height: 100%;
+  padding: 30px;
+  padding-top: 10px;
+  margin-top: 0;
+}
+.login-content label{
+padding-bottom: 5px;
+padding-top: 20px;
+font-weight: 700;
+z-index: 9999;
+font-size: 25px;
+}
+.fingerprint{
+width: 41%;
+height: 30%;
+background: url('../images/fingerprint.png') center center no-repeat;
+background-size: cover;
+margin: 0 auto;
+z-index: 9999;
+margin-top: 10px;
+}
+.login-content button{
+margin-top: 40px;
+}
+.vision-message{
+  width: 90%;
+  background: #decdc3;
+  position: absolute;
+  left: 5%;
+  top: 150px;
+  border-radius: 5px;
+  z-index: 9999;
+  display: none;
+}
+.vision-info2{
+  border-left: none;
+}
+  }
+  @media screen and (max-width: 411px) {
+    .login-area{
+      width: 100%;
+      margin-top: 0px;
+      height: 100vh;
+  }
+  .fingerprint{
+  width: 41%;
+  height: 25%;
+  background: url('../images/fingerprint.png') center center no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  z-index: 9999;
+  margin-top: 10px;
+  }
+  }
+  @media screen and (max-width: 375px) {
+    header{
+      padding: 15px 0 0 40px;
+    }
+    .fingerprint{
+      width: 40%;
+      height: 25%;
+      background: url('../images/fingerprint.png') center center no-repeat;
+      background-size: cover;
+      margin: 0 auto;
+      z-index: 9999;
+    }
+    .login-content{
+      padding: 20px;
+  }
+  }
+  @media screen and (max-width: 360px) {
+    header{
+      padding: 10px 0 0 40px;
+    }
+    .fingerprint{
+      width: 35%;
+      height: 25%;
+      background: url('../images/fingerprint.png') center center no-repeat;
+      background-size: cover;
+      margin: 0 auto;
+      z-index: 9999;
+    }
+    /* tic mark */
+#tick-mark::before {
+  position: absolute;
+  left: 80px;
+  top: 35%;
+  height: 55%;
+  width: 10px;
+  background-color: #f57575;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+
+#tick-mark::after {
+  position: absolute;
+  left: 80px;
+  bottom: 20px;
+  height: 10px;
+  width: 86%;
+  background-color: #f57575;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+  }
+  @media screen and (max-width: 320px) {
+    .fingerprint{
+      width: 35%;
+      height: 30%;
+      background: url('../images/fingerprint.png') center center no-repeat;
+      background-size: cover;
+      margin: 0 auto;
+      z-index: 9999;
+    }
+    .login-content button{
+      margin-top: 20px;
+    }
+    /* tic mark */
+#tick-mark::before {
+  position: absolute;
+  left: 75px;
+  top: 35%;
+  height: 55%;
+  width: 10px;
+  background-color: #f57575;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+
+#tick-mark::after {
+  position: absolute;
+  left: 75px;
+  bottom: 20px;
+  height: 10px;
+  width: 86%;
+  background-color: #f57575;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+  }
+
+  
